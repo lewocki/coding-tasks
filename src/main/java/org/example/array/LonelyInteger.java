@@ -1,31 +1,18 @@
 package org.example.array;
 
-import java.io.*;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class LonelyInteger {
 
-    public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+    public static void main(String[] args) {
+        ArrayList<Integer> input = new ArrayList<>();
+        input.addAll(List.of(1, 1, 2, 2, 3, 4, 4, 7, 7));
 
-        int n = Integer.parseInt(bufferedReader.readLine().trim());
-
-        List<Integer> a = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-                .map(Integer::parseInt)
-                .collect(Collectors.toList());
-
-        int result = findLonelyInteger(a);
-
-        bufferedWriter.write(String.valueOf(result));
-        bufferedWriter.newLine();
-
-        bufferedReader.close();
-        bufferedWriter.close();
+        int result = findLonelyInteger(input);
+        System.out.println(result == 3);
     }
 
     public static int findLonelyInteger(List<Integer> elements) {
