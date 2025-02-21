@@ -8,8 +8,7 @@ import java.util.Set;
 public class LonelyInteger {
 
     public static void main(String[] args) {
-        ArrayList<Integer> input = new ArrayList<>();
-        input.addAll(List.of(1, 1, 2, 2, 3, 4, 4, 7, 7));
+        ArrayList<Integer> input = new ArrayList<>(List.of(1, 1, 2, 2, 3, 4, 4, 7, 7));
 
         int result = findLonelyInteger(input);
         System.out.println(result == 3);
