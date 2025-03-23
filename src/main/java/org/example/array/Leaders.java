@@ -38,7 +38,7 @@ public class Leaders {
     }
 
     public static void main(String[] args) {
-        int[] inputArr = {16, 17, 4, 3, 5, 2};
+        int[] inputArr = {16, 17, 11, 3, 15, 2};
         System.out.println("expected: " + "[17, 5, 2]");
         System.out.println("  actual: " + collectLeaders(inputArr).toString());
 
