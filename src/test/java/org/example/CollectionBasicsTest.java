@@ -10,7 +10,6 @@ import java.util.ListIterator;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-import static java.util.stream.Collectors.toCollection;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
