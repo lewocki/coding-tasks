@@ -1,5 +1,6 @@
 package org.example.array;
 
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -13,8 +14,9 @@ public class MinMaxValues {
 
     public static void miniMaxSum(List<Integer> arr) {
         // Write your code here
-        Integer max = arr.stream().max(Comparator.naturalOrder()).orElse(0);
-        Integer min = arr.stream().min(Comparator.naturalOrder()).orElse(0);
+        Collections.sort(arr);
+        Integer min = arr.getFirst();
+        Integer max = arr.getLast();
         long sum = arr.stream().mapToLong(Integer::longValue).sum();
         long minValue = sum - max;
         long maxValue = sum - min;
