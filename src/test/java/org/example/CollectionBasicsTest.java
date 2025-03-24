@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class CollectionBasicsTest {
 
     @Test
-    @DisplayName("╯°□°）╯")
+    @DisplayName("Iterator")
     public void testIterator() {
         List<Integer> list = IntStream.range(0, 10)
                 .boxed()

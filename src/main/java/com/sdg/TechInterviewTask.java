@@ -32,8 +32,6 @@ public class TechInterviewTask {
         }
 
         System.out.println("RESULT:");
-        result.forEach((k, v) -> System.out.println(
-                String.format("Decade [%s0 - %s0]: %s users", k, Integer.valueOf(k) + 1, v)));
-        //System.out.println(result);
+        result.forEach((k, v) -> System.out.printf("Decade [%s0 - %s0]: %s users%n", k, Integer.parseInt(k) + 1, v));
     }
 }
