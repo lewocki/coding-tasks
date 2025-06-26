@@ -1,4 +1,4 @@
-package com.sdg;
+package coding.task.sdg;
 
 
 import lombok.AllArgsConstructor;

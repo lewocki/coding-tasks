@@ -1,6 +1,6 @@
 package com.diablocom;
 
-import com.diabolocom.DiabolocomCodingTask;
+import coding.task.DiabolocomCodingTask;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -28,6 +28,15 @@ public class CinemaTest {
     void testAwesomePlace(Integer expected, List<Integer> cinemaSeats) {
 
         int seat = DiabolocomCodingTask.findSeat(cinemaSeats);
+
+        Assertions.assertEquals(expected, seat);
+    }
+
+    @ParameterizedTest
+    @MethodSource("caseProvider")
+    void testFindBestSeat(Integer expected, List<Integer> cinemaSeats) {
+
+        int seat = DiabolocomCodingTask.findBestSeat(cinemaSeats);
 
         Assertions.assertEquals(expected, seat);
     }
