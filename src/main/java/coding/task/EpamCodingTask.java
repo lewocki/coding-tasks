@@ -14,7 +14,7 @@ public class EpamCodingTask {
         Map<String, List<String>> result = new HashMap<>();
         List<String> arrayList = new ArrayList<>();
         arrayList.add(wordsList.getFirst());
-        Function<String, String> sortChars = it -> Arrays.stream(it.split("")).sorted().collect(Collectors.joining());
+        Function<String, String> sortChars = it -> Arrays.stream(it.split("")).sorted(Comparator.reverseOrder()).collect(Collectors.joining());
         result.put(sortChars.apply(wordsList.getFirst()), arrayList);
 
         for (int i = 1; i < wordsList.size(); i++) {
