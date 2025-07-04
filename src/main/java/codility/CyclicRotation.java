@@ -39,12 +39,16 @@ public class CyclicRotation {
         System.out.println(Arrays.toString(solution(new int[]{1, 2, 3, 4, 5, 6, 7}, 10)));
         System.out.println(Arrays.toString(solution(new int[]{0, 0, 0}, 1)));
         System.out.println(Arrays.toString(solution(new int[]{1, 2, 3, 4}, 4)));
+        System.out.println(Arrays.toString(solution(new int[]{1, 2}, 4)));
     }
 
 
     public static int[] solution(int[] inputArrray, int rotations) {
         int length = inputArrray.length;
         if (rotations == 0 || rotations == length) {
+            return inputArrray;
+        }
+        if (inputArrray.length == 1) {
             return inputArrray;
         }
         int[] outputArray = new int[length];
