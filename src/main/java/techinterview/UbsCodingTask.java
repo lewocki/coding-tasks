@@ -1,4 +1,4 @@
-package coding.task;
+package techinterview;
 
 import java.util.*;
 import java.util.function.Function;

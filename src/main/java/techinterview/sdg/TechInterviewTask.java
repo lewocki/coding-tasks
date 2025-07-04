@@ -1,10 +1,10 @@
-package coding.task.sdg;
+package techinterview.sdg;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static coding.task.sdg.TestDataGenerator.generateRandomUsers;
+import static techinterview.sdg.TestDataGenerator.generateRandomUsers;
 
 public class TechInterviewTask {
 

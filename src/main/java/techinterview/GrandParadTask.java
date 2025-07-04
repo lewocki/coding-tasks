@@ -1,4 +1,4 @@
-package coding.task;
+package techinterview;
 
 import java.util.ArrayList;
 import java.util.List;

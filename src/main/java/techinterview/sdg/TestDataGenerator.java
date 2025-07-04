@@ -1,4 +1,4 @@
-package coding.task.sdg;
+package techinterview.sdg;
 
 import com.github.javafaker.Faker;
 import org.instancio.Instancio;
